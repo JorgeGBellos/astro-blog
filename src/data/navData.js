@@ -4,8 +4,8 @@ const navData = [
         path: "/about/",
     },
     {
-        name: "Home",
-        path: "/"
+        name: "Blog",
+        path: "/blog/"
     }
 ]
 export default navData;

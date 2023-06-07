@@ -4,7 +4,7 @@ import MainHead from "./MainHead.astro";
 import Footer from "../components/Footer.astro";
 import Nav from "../components/Nav.astro";
 //Style import
-import "../styles/global.css"
+import "../styles/global.css";
 //Destructuring the props and giving default values
 const { title = "Default title", description = "Default desc" } = Astro.props;
 ---
@@ -12,8 +12,10 @@ const { title = "Default title", description = "Default desc" } = Astro.props;
 <html lang="en">
   <MainHead title={title} description={description} />
   <body>
-    <Nav/>
-    <slot />
-    <Footer/>
+    <Nav />
+    <main>
+      <slot />
+    </main>
+    <Footer />
   </body>
 </html>
