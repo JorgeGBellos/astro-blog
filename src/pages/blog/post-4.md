@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 title: Why is this CSS so weird?
-date: 2022-12-09
+date: 2024-12-09
 author: Anna Dixon
 image: {
   src: "/images/post-4.jpg",
