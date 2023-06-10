@@ -8,8 +8,9 @@ import { formatBlogPosts } from "../js/util";
 const allPosts = await Astro.glob("./blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts);
 ---
+
 <MainLayout title="Welcome to George's blog" description="My home Page">
-	<section class="container about" aria-label="About Me">
+    <section class="container about" aria-label="About Me">
         <img src="/images/headshot.jpg" alt="Me" width="200" />
         <div class="content">
             <h1 class="h1">My blog</h1>
@@ -19,15 +20,11 @@ const formattedPosts = formatBlogPosts(allPosts);
                 cupiditate cum laudantium! Sequi quisquam asperiores corporis,
                 sapiente ipsa quasi amet iusto quidem aspernatur est.
             </p>
-            <Link
-                href="/about/"
-                style="secondary"
-                text="About Me"
-            />
+            <Link href="/about/" style="secondary" text="About Me" />
         </div>
     </section>
-	<section class="container" aria-label="New Blog Posts">
-        <h2 class="h3">New Blog Posts</h1>
+    <section class="container" aria-label="New Blog Posts">
+        <h2 class="h3">New Blog Posts</h2>
         <div class="post-container"></div>
         {
             formattedPosts.map((post) => (
