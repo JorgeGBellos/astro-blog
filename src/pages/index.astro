@@ -25,15 +25,16 @@ const formattedPosts = formatBlogPosts(allPosts);
     </section>
     <section class="container" aria-label="New Blog Posts">
         <h2 class="h3">New Blog Posts</h2>
-        <div class="post-container"></div>
-        {
-            formattedPosts.map((post) => (
-                <PostCard
-                    frontmatter={post.frontmatter}
-                    url={post.url}
-                    tagType="h3"
-                />
-            ))
-        }
+        <div class="post-container">
+            {
+                formattedPosts.map((post) => (
+                    <PostCard
+                        frontmatter={post.frontmatter}
+                        url={post.url}
+                        tagType="h3"
+                    />
+                ))
+            }
+        </div>
     </section>
 </MainLayout>

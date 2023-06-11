@@ -43,7 +43,7 @@ const catPosts = formattedPosts.filter(
         aria-label={`Welcome to the category page of: ${name}`}
     >
         <h1 class="h1">Posts about <span>{name}</span></h1>
-        <div class="post-container"></div>
+        <div class="post-container">
         {
             catPosts.map((post) => (
                 <PostCard
@@ -53,5 +53,6 @@ const catPosts = formattedPosts.filter(
                 />
             ))
         }
+        </div>
     </section>
 </MainLayout>

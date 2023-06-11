@@ -55,15 +55,16 @@ const { posts, authorName } = Astro.props;
         aria-label={`Welcome to the Author page of: ${authorName}`}
     >
         <h1 class="h1">Posts by <span>{authorName}</span></h1>
-        <div class="post-container"></div>
-        {
-            posts.map((post) => (
-                <PostCard
-                    frontmatter={post.frontmatter}
-                    url={post.url}
-                    tagType="h3"
-                />
-            ))
-        }
+        <div class="post-container">
+            {
+                posts.map((post) => (
+                    <PostCard
+                        frontmatter={post.frontmatter}
+                        url={post.url}
+                        tagType="h3"
+                    />
+                ))
+            }
+        </div>
     </section>
 </MainLayout>

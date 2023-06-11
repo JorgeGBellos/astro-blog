@@ -17,7 +17,7 @@ export function formatDate(date) {
 
 export function formatBlogPosts(posts,{
   filterOutDrafts = true,
-  filterOutFuturePosts = true,
+  filterOutFuturePosts = false,
   sortByDate = true,
   limit = undefined,
 } = {}){
